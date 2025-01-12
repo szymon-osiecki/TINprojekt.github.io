@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starożytny Świat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Starożytny Świat</h1>
+        <nav>
+            <ul>
+                <li><a href="egypt.html">Egipt</a></li>
+                <li><a href="rome.html">Rzym</a></li>
+                <li><a href="greece.html">Grecja</a></li>
+                <li><a href="mesopotamia.html">Mezopotamia</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="slider">
+            <div class="slides">
+                <img src="images/egypt.jpg" alt="Starożytny Egipt">
+                <img src="images/rome.jpg" alt="Starożytny Rzym">
+                <img src="images/greece.jpg" alt="Starożytna Grecja">
+                <img src="images/mesopotamia.jpg" alt="Mezopotamia">
+            </div>
+        </div>        
+        <section>
+            <h2>Sprawdź swoją wiedzę o starożytności</h2>
+            <div id="quiz">
+                <div class="question">
+                    <p><strong>Pytanie 1:</strong> Który kraj był kolebką demokracji?</p>
+                    <button class="answer">Egipt</button>
+                    <button class="answer" data-correct="true">Grecja</button>
+                    <button class="answer">Rzym</button>
+                    <button class="answer">Mezopotamia</button>
+                    <div class="feedback hidden"></div>
+                </div>
+                <div class="question">
+                    <p><strong>Pytanie 2:</strong> W którym kraju znajdują się Piramidy w Gizie?</p>
+                    <button class="answer" data-correct="true">Egipt</button>
+                    <button class="answer">Grecja</button>
+                    <button class="answer">Rzym</button>
+                    <button class="answer">Mezopotamia</button>
+                    <div class="feedback hidden"></div>
+                </div>
+                <div class="question">
+                    <p><strong>Pytanie 3:</strong> Który kraj znajdował się między Eufratem i Tygrysem?</p>
+                    <button class="answer">Egipt</button>
+                    <button class="answer">Grecja</button>
+                    <button class="answer">Rzym</button>
+                    <button class="answer" data-correct="true">Mezopotamia</button>
+                    <div class="feedback hidden"></div>
+                </div>
+                <div class="question">
+                    <p><strong>Pytanie 4:</strong> Która kraj zbudował Koloseum?</p>
+                    <button class="answer">Egipt</button>
+                    <button class="answer">Grecja</button>
+                    <button class="answer" data-correct="true">Rzym</button>
+                    <button class="answer">Mezopotamia</button>
+                    <div class="feedback hidden"></div>
+                </div>
+            </div>
+            <p id="score">Twój wynik: <span id="score-value">0</span> / 4</p>
+        </section>
+    </main>
+    <footer>
+        <p>2025 Projekt TIN</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
